@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio & Academic Manager</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="#home">Daniel Ezra</a></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#planner">Planner</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Home</h2>
+        <div class="flex-row" style="align-items: center;">
+            <div>
+                <img src="image.jpg.jpeg" alt="Student Profile Photograph" style="border-radius: 50%; width: 150px; border: 3px solid #0f2b46;">
+            </div>
+            <div style="flex: 2;">
+                <h3>Welcome! My Name is Daniel Ezra</h3>
+                <p>Welcome to my official academic space, constructed as part of my continuous technical training.</p>
+                <br>
+                <h3>Brief Biography</h3>
+                <p>I am an undergraduate student studying at MIVA Open University. I focus on learning fundamental web building blocks, organizing raw software scripts, and configuring standard functional pages.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="flex-row">
+            <div class="card">
+                <h3>Educational Background</h3>
+                <p>Currently studying software engineering at MIVA Open University.</p>
+            </div>
+            <div class="card">
+                <h3>Technical Skills</h3>
+                <ul style="margin-left: 20px; padding-top: 5px;">
+                    <li>Semantic HTML5</li>
+                    <li>Basic Layout Styling</li>
+                    <li>Vanilla JavaScript Logic</li>
+                    <li>Flutter/Dart</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Career Aspirations</h3>
+                <p>To acquire clean design skills and advance into roles building robust system software.</p>
+            </div>
+            <div class="card">
+                <h3>Hobbies & Interests</h3>
+                <p>I enjoy resolving logic tasks, reviewing system hardware configurations, and gaming.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="flex-row">
+            <div class="project-card">
+                <img src="project 1.jpg.jpeg" alt="Project 1">
+                <div class="project-info">
+                    <h3>Project One</h3>
+                    <p>my first project.</p>
+                    <a href="#" style="color:#d9381e; font-weight:bold; text-decoration:none;">Project Link</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="project 2.jpg.jpeg" alt="Project 2">
+                <div class="project-info">
+                    <h3>Project Two</h3>
+                    <p>my second project.</p>
+                    <a href="#" style="color:#d9381e; font-weight:bold; text-decoration:none;">Project Link</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img  max-width="300" height="150" src="project 3.jpg.jpeg" alt="Project 3">
+                <div class="project-info">
+                    <h3>Project Three</h3>
+                    <p>my third project.</p>
+                    <a href="#" style="color:#d9381e; font-weight:bold; text-decoration:none;">Project Link</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="planner">
+        <h2>Academic Planner</h2>
+        <div style="max-width: 500px; margin: 0 auto;">
+            <div class="form-group" style="display: flex; gap: 10px;">
+                <input type="text" id="taskInput" placeholder="Add an upcoming study task...">
+                <button type="button" id="addTaskBtn">Add Task</button>
+            </div>
+            <ul id="taskList" style="list-style: none;"></ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="flex-row">
+            <div style="flex: 1; min-width: 280px;">
+                <form id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="nameInput">Full Name:</label>
+                        <input type="text" id="nameInput">
+                        <div id="nameError" class="error-text">Name cannot be blank.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput">Email Address:</label>
+                        <input type="email" id="emailInput">
+                        <div id="emailError" class="error-text">Please provide a valid email structure.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneInput">Phone Number:</label>
+                        <input type="text" id="phoneInput">
+                        <div id="phoneError" class="error-text">Phone must contain only numerical digits.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="msgInput">Message Context:</label>
+                        <textarea id="msgInput" rows="4"></textarea>
+                        <div id="msgError" class="error-text">Message space cannot be blank.</div>
+                    </div>
+                    <button type="submit">Submit Form</button>
+                </form>
+            </div>
+
+            <div style="flex: 1; min-width: 280px;">
+                <h3>My Weekly Availability</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Operational Days</th>
+                            <th>Time Blocks Available</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday - Wednesday</td>
+                            <td>9:00 AM - 12:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday - Friday</td>
+                            <td>2:00 PM - 5:00 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+     <script src="script.js"></script>
+    <footer>
+        <p>&copy; Daniel Ezra. All Rights Reserved.</p>
+    </footer>
+
+   
+</body>
+</html>

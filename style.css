@@ -1,0 +1,208 @@
+
+        /* Basic Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Enables smooth scrolling when clicking navigation IDs */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        /* Navigation Bar Styling */
+        header {
+            background-color: #0f2b46; /* Consistent color scheme */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .logo a {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease; /* Transition/Animation requirement */
+        }
+
+        .nav-links a:hover {
+            background-color: #d9381e; /* Secondary color accent */
+        }
+
+        /* Section Containers */
+        section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #0f2b46;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #0f2b46;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: #0f2b46;
+            margin-bottom: 10px;
+        }
+
+        /* Simple Layout Rules Using Flexbox */
+        .flex-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap; /* Makes it mobile friendly */
+        }
+
+        .card {
+            flex: 1;
+            min-width: 220px;
+            background: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+        }
+
+        /* Project Cards Layout */
+        .project-card {
+            flex: 1;
+            min-width: 280px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            overflow: hidden;
+            background: #f9f9f9;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .project-info {
+            padding: 15px;
+        }
+
+        /* Forms & Interactive Planners */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #0f2b46;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #d9381e;
+        }
+
+        .error-text {
+            color: #d9381e;
+            font-size: 13px;
+            display: none;
+            margin-top: 5px;
+        }
+
+        /* Table Formatting */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #0f2b46;
+            color: white;
+        }
+
+        /* Academic Task Item Settings */
+        .task-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .completed-task {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0f2b46;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Mobile Responsive Breakpoint */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .flex-row {
+                flex-direction: column;
+            }
+        }
